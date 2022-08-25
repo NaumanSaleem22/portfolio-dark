@@ -1817,6 +1817,8 @@ button:focus {
     }
     .portfolio #portfolio-flters li {
         width: 45%;
+        padding: 10px 3px;
+        font-size: 12px;
     }
     .mfp-arrow-left {
         left: -20px;
