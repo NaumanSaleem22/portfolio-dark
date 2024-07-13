@@ -31,7 +31,7 @@
     /*--------------------------------
      01. One Page Scrollspy
      ----------------------------------*/
-    $('body').scrollspy({target: '#navigation'});
+    $('body').scrollspy({ target: '#navigation' });
     function scrollToSection(event) {
         event.preventDefault();
         var $section = $($(this).attr('href'));
@@ -94,7 +94,7 @@
 
     function skill_javaScript() {
         $('#javascript').LineProgressbar({
-            percentage: 65,
+            percentage: 75,
             radius: '3px',
             height: '10px',
             duration: 6000,
@@ -116,7 +116,7 @@
 
     function skill_wordpress() {
         $('#wordpress').LineProgressbar({
-            percentage: 95,
+            percentage: 75,
             radius: '3px',
             height: '10px',
             duration: 6000,
@@ -148,8 +148,8 @@
     skill_php();
 
     function skill_web_development() {
-        $('#web-development').LineProgressbar({
-            percentage: 75,
+        $('#angular').LineProgressbar({
+            percentage: 85,
             radius: '3px',
             height: '10px',
             duration: 6000,
@@ -272,7 +272,7 @@
     });
     function mobileMenuHide() {
         var windowWidth = $(window).width(),
-                siteHeader = $('.navigation-menu');
+            siteHeader = $('.navigation-menu');
         if (windowWidth < 992) {
             siteHeader.addClass('mobile-menu-hide');
             $('.menu-toggle').removeClass('open');
