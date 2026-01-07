@@ -106,7 +106,7 @@
 
     function skill_jquery() {
         $('#jquery').LineProgressbar({
-            percentage: 75,
+            percentage: 85,
             radius: '3px',
             height: '10px',
             duration: 6000,
