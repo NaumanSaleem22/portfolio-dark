@@ -10,7 +10,6 @@
  01. One Page Scrollspy
  02. Header Sticky
  03. Tooltip
- 04. Skills LineProgressbar
  05. jQuery counterUp
  06. Porfolio Isotope Filter
  07. Magnific Popup
@@ -20,7 +19,8 @@
     7.4. Blog Detail Popup
  08. Form Validation
  09. Menu Toggle
- 10. Back To Top Scroll Arrow
+ 10. Footer Year
+ 11. Back To Top Scroll Arrow
  ========================================================================*/
 
 
@@ -53,10 +53,12 @@
             $('#header').removeClass("sticky-header fadeInDown");
         }
     });
-    $('.main-wrapper').on('click', '.about-btn', function() {
+    $('.main-wrapper').on('click', '.about-btn', function(e) {
+        e.preventDefault();
         $('.navbar li a[href="#about"]').trigger('click');
     });
-    $('.main-wrapper').on('click', '.portfolio-btn', function() {
+    $('.main-wrapper').on('click', '.portfolio-btn', function(e) {
+        e.preventDefault();
         $('.navbar li a[href="#portfolio"]').trigger('click');
     });
 
@@ -69,101 +71,12 @@
     tooltip();
 
     /*--------------------------------
-     04. Skills LineProgressbar
-     ----------------------------------*/
-    function skill_html() {
-        $('#html').LineProgressbar({
-            percentage: 95,
-            radius: '3px',
-            height: '10px',
-            duration: 6000,
-            backgroundColor: '#ddd'
-        });
-    }
-    skill_html();
-
-    function skill_css() {
-        $('#css').LineProgressbar({
-            percentage: 90,
-            radius: '3px',
-            height: '10px',
-            duration: 6000,
-            backgroundColor: '#ddd'
-        });
-    }
-    skill_css();
-
-    function skill_javaScript() {
-        $('#javascript').LineProgressbar({
-            percentage: 87,
-            radius: '3px',
-            height: '10px',
-            duration: 6000,
-            backgroundColor: '#ddd'
-        });
-    }
-    skill_javaScript();
-
-    function skill_jquery() {
-        $('#jquery').LineProgressbar({
-            percentage: 85,
-            radius: '3px',
-            height: '10px',
-            duration: 6000,
-            backgroundColor: '#ddd'
-        });
-    }
-    skill_jquery();
-
-    function skill_wordpress() {
-        $('#wordpress').LineProgressbar({
-            percentage: 75,
-            radius: '3px',
-            height: '10px',
-            duration: 6000,
-            backgroundColor: '#ddd'
-        });
-    }
-    skill_wordpress();
-
-    function skill_web_design() {
-        $('#web-design').LineProgressbar({
-            percentage: 90,
-            radius: '3px',
-            height: '10px',
-            duration: 6000,
-            backgroundColor: '#ddd'
-        });
-    }
-    skill_web_design();
-
-    function skill_php() {
-        $('#php').LineProgressbar({
-            percentage: 80,
-            radius: '3px',
-            height: '10px',
-            duration: 6000,
-            backgroundColor: '#ddd'
-        });
-    }
-    skill_php();
-
-    function skill_web_development() {
-        $('#angular').LineProgressbar({
-            percentage: 85,
-            radius: '3px',
-            height: '10px',
-            duration: 6000,
-            backgroundColor: '#ddd'
-        });
-    }
-    skill_web_development();
-
-    /*--------------------------------
      05. jQuery counterUp
      ----------------------------------*/
     function counter_number() {
-        $('.counter').countUp();
+        if ($.fn.countUp) {
+            $('.counter').countUp();
+        }
     }
     counter_number();
 
@@ -176,13 +89,18 @@
             itemSelector: '.portfolio-item',
             layoutMode: 'fitRows'
         });
-        $('#portfolio-flters li').on('click', function() {
-            $("#portfolio-flters li").removeClass('filter-active');
-            $(this).addClass('filter-active');
+        $('#portfolio-flters button').on('click', function() {
+            $('#portfolio-flters button').removeClass('filter-active').attr('aria-pressed', 'false');
+            $(this).addClass('filter-active').attr('aria-pressed', 'true');
             portfolioIsotope.isotope({
                 filter: $(this).data('filter')
             });
         });
+        if (document.fonts && document.fonts.ready) {
+            document.fonts.ready.then(function() {
+                portfolioIsotope.isotope('layout');
+            });
+        }
 
         /* Preloader */
         $('.preloader').removeClass("active");
@@ -199,7 +117,9 @@
             }
         });
     }
-    image_gallery();
+    if ($.fn.magnificPopup) {
+        image_gallery();
+    }
 
     /*--------------------------------
      7.2. Youtube - Vimeo - SoundCloud Popup
@@ -213,7 +133,9 @@
             fixedContentPos: false
         });
     }
-    video_soundcloud();
+    if ($.fn.magnificPopup) {
+        video_soundcloud();
+    }
 
     /*--------------------------------
      7.3. Porfolio Detail Popup
@@ -228,7 +150,9 @@
             }
         });
     }
-    porfolio_detail_popup();
+    if ($.fn.magnificPopup) {
+        porfolio_detail_popup();
+    }
 
     /*--------------------------------
      7.4. Blog Detail Popup
@@ -243,7 +167,9 @@
             }
         });
     }
-    blog_detail_popup();
+    if ($.fn.magnificPopup) {
+        blog_detail_popup();
+    }
 
     /*--------------------------------
      08. Form Validation
@@ -291,7 +217,12 @@
     });
 
     /*--------------------------------
-     10. Back To Top Scroll Arrow
+     10. Footer Year
+     ----------------------------------*/
+    $('#year').text(new Date().getFullYear());
+
+    /*--------------------------------
+     11. Back To Top Scroll Arrow
      ----------------------------------*/
     function back_to_top() {
         $(".back-to-top").on("click", function() {

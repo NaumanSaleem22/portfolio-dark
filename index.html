@@ -3,39 +3,95 @@
 
 <head>
     <!-- Meta Tag -->
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
-    <!-- Title Of Site -->
-    <title>Nauman &ndash; Frontend Portfolio</title>
+    <!-- Title & SEO -->
+    <title>Nauman Saleem | Frontend Developer – Angular, React &amp; TypeScript</title>
+    <meta name="description"
+        content="Muhammad Nauman Saleem is a Frontend Developer in Karachi with 5+ years building eCommerce, ERP (Odoo) and SaaS web apps in Angular, React and TypeScript, plus REST APIs with Node.js and Express." />
+    <meta name="author" content="Muhammad Nauman Saleem" />
+    <meta name="theme-color" content="#2e3135" />
+    <link rel="canonical" href="https://portfolioofnauman.netlify.app/" />
+
+    <!-- Open Graph / Social Preview -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://portfolioofnauman.netlify.app/" />
+    <meta property="og:title" content="Nauman Saleem | Frontend Developer – Angular, React &amp; TypeScript" />
+    <meta property="og:description"
+        content="5+ years building eCommerce, ERP (Odoo) and SaaS web apps in Angular, React and TypeScript, plus REST APIs with Node.js and Express." />
+    <meta property="og:image" content="https://portfolioofnauman.netlify.app/assets/images/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Muhammad Nauman Saleem – Frontend Developer" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nauman Saleem | Frontend Developer – Angular, React &amp; TypeScript" />
+    <meta name="twitter:description"
+        content="5+ years building eCommerce, ERP (Odoo) and SaaS web apps in Angular, React and TypeScript." />
+    <meta name="twitter:image" content="https://portfolioofnauman.netlify.app/assets/images/og-image.jpg" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Muhammad Nauman Saleem",
+        "jobTitle": "Frontend Developer",
+        "url": "https://portfolioofnauman.netlify.app/",
+        "email": "mailto:noumansaleem1999@gmail.com",
+        "address": { "@type": "PostalAddress", "addressLocality": "Karachi", "addressCountry": "PK" },
+        "sameAs": [
+            "https://www.linkedin.com/in/nouman-saleem-0b34941a1/",
+            "https://github.com/NaumanSaleem22"
+        ],
+        "knowsAbout": ["Angular", "React", "TypeScript", "JavaScript", "Odoo", "Node.js", "Express.js", "MongoDB"]
+    }
+    </script>
+
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/images/master_favicon_thumbnail.png" />
+    <link rel="icon" href="assets/images/master_favicon_thumbnail.png" />
+
+    <!-- Fonts: Google Fonts load without blocking first paint (system font shows until they arrive) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" />
+    </noscript>
+    <!-- Icon font: Font Awesome subset with only the icons this page uses (3 KB instead of 75 KB) -->
+    <link rel="preload" as="font" href="assets/fonts/fa-subset.woff2" type="font/woff2" crossorigin />
+    <!-- Hero background (LCP): smaller file on phones -->
+    <link rel="preload" as="image" href="assets/images/banner2-mobile.webp" type="image/webp"
+        media="(max-width: 767px)" />
+    <link rel="preload" as="image" href="assets/images/banner2-desktop.webp" type="image/webp"
+        media="(min-width: 768px)" />
 
     <!-- *********** CSS Files *********** -->
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <!-- Magnific Popup -->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.index.min.css" />
+    <!-- Icons (generated from Font Awesome 4.7; regenerate if you add icons) -->
+    <style>@font-face{font-family:'FontAwesome';src:url('assets/fonts/fa-subset.woff2') format('woff2');font-weight:normal;font-style:normal;font-display:block}.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.fa-address-book:before{content:"\f2b9"}.fa-angle-double-up:before{content:"\f102"}.fa-briefcase:before{content:"\f0b1"}.fa-calendar:before{content:"\f073"}.fa-check:before{content:"\f00c"}.fa-close:before{content:"\f00d"}.fa-code:before{content:"\f121"}.fa-cog:before{content:"\f013"}.fa-download:before{content:"\f019"}.fa-envelope:before{content:"\f0e0"}.fa-external-link:before{content:"\f08e"}.fa-facebook:before{content:"\f09a"}.fa-github:before{content:"\f09b"}.fa-home:before{content:"\f015"}.fa-linkedin:before{content:"\f0e1"}.fa-map-marker:before{content:"\f041"}.fa-mobile:before{content:"\f10b"}.fa-phone:before{content:"\f095"}.fa-plug:before{content:"\f1e6"}.fa-rocket:before{content:"\f135"}.fa-server:before{content:"\f233"}.fa-share-alt:before{content:"\f1e0"}.fa-shopping-cart:before{content:"\f07a"}.fa-tachometer:before{content:"\f0e4"}.fa-twitter:before{content:"\f099"}.fa-user:before{content:"\f007"}</style>
 
     <!-- Main Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- Template Color -->
     <link rel="stylesheet" href="assets/css/color/default.css" id="optional-color" />
+
+    <!-- *********** JS Files (deferred: download in parallel, run in order after parsing) *********** -->
+    <script src="assets/js/jquery-3.5.1.js" defer></script>
+    <script src="assets/js/bootstrap.bundle.min.js" defer></script>
+    <script src="assets/js/isotope.pkgd.min.js" defer></script>
+    <script src="assets/js/jquery.animatedheadline.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/switcher.js" defer></script>
 </head>
 
 <body id="home" class="template-index" data-spy="scroll" data-target="#scrollspy" data-offset="70">
-    <!-- Preloader -->
-    <div id="preloader" class="preloader active">
-        <div class="preloader-inner">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div>
-    <!-- End Preloader -->
+    <a class="skip-link" href="#main">Skip to content</a>
 
     <!-- Page Wrapper -->
     <div id="page-wrapper" class="page-wrapper">
@@ -48,44 +104,35 @@
                     <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6">
                         <!-- Logo -->
                         <div class="logo navbar-brand p-0 m-0 w-100">
-
-                            <!-- Text Logo -->
-                            <a class="text-logo" href="index.html">Nauman </a>
-                            <!-- End Text Logo -->
-                            <!-- Image Logo -->
-                            <!-- <a href="index.html" class="logo-img"><img class="img-fluid" src="assets/images/logo.png" alt="logo" title="Logo" /></a> -->
-                            <!-- End Image Logo -->
+                            <a class="text-logo" href="index.html">Nauman</a>
                         </div>
                         <!-- End Logo -->
                     </div>
                     <div class="col-xl-10 col-lg-10 col-md-10 col-sm-6 col-6">
                         <!-- Main Menu -->
                         <div id="navigation" class="navigation float-lg-right">
-                            <nav class="navbar navbar-expand-lg p-0">
-                                <button class="menu-toggle menu-toggle-line d-lg-none"
-                                    type="button"><span></span><span></span><span></span></button>
+                            <nav class="navbar navbar-expand-lg p-0" aria-label="Main">
+                                <button class="menu-toggle menu-toggle-line d-lg-none" type="button"
+                                    aria-label="Open menu" aria-controls="navbarMenu"><span></span><span></span><span></span></button>
                                 <div class="navigation-menu mobile-menu-hide" id="navbarMenu">
                                     <a href="#" class="closeNav-btn d-lg-none clearfix" id="closeNav"
                                         title="Close"><span class="menu-close mr-2">Close</span><i class="fa fa-close"
                                             aria-hidden="true"></i></a>
                                     <ul class="navbar-nav align-items-center justify-content-end w-100">
                                         <li class="nav-item"><a data-scroll class="nav-link active" href="#home"><i
-                                                    class="fa fa-home"></i><span class="link-text">Home</span></a>
+                                                    class="fa fa-home" aria-hidden="true"></i><span class="link-text">Home</span></a>
                                         </li>
                                         <li class="nav-item"><a data-scroll class="nav-link" href="#about"><i
-                                                    class="fa fa-user"></i><span class="link-text">About</span></a>
+                                                    class="fa fa-user" aria-hidden="true"></i><span class="link-text">About</span></a>
                                         </li>
                                         <li class="nav-item"><a data-scroll class="nav-link" href="#services"><i
-                                                    class="fa fa-rocket"></i><span class="link-text">Services</span></a>
+                                                    class="fa fa-rocket" aria-hidden="true"></i><span class="link-text">Services</span></a>
                                         </li>
                                         <li class="nav-item"><a data-scroll class="nav-link" href="#portfolio"><i
-                                                    class="fa fa-briefcase"></i><span
+                                                    class="fa fa-briefcase" aria-hidden="true"></i><span
                                                     class="link-text">Portfolio</span></a></li>
-                                        <!-- <li class="nav-item"><a data-scroll class="nav-link" href="#blog"><i
-                                                        class="fa fa-pencil"></i><span class="link-text">Blog</span></a>
-                                        </li> -->
                                         <li class="nav-item"><a data-scroll class="nav-link" href="#contact"><i
-                                                    class="fa fa-address-book"></i><span
+                                                    class="fa fa-address-book" aria-hidden="true"></i><span
                                                     class="link-text">Contact</span></a></li>
                                     </ul>
                                 </div>
@@ -108,53 +155,52 @@
                 <div class="container">
                     <!-- Banner Inner -->
                     <div class="banner-inner d-flex align-items-center justify-content-center">
-                        <!-- Banner Image -->
-                        <!-- <div class="banner-img mb-4 mb-lg-0">
-                            <img class="img-fluid center-picture" src="https://media.licdn.com/dms/image/v2/D4D03AQH0HN73cIaSEw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723549021504?e=1747267200&v=beta&t=9oeoePREJbv0yd6ZEL8CTzVtlRc10TVO6LfFU29NyZ8"
-                                alt="Profile" />
-                        </div> -->
-                        <!-- End Banner Image -->
                         <!-- Banner Text -->
-                        <div class="banner-text text-center ml-lg-5">
-                            <h2>Hi There!</h2>
-                            <h3 class="d-sm-none d-block text-uppercase headline">I'M <b class="is-visible">Nauman</b>
-                            </h3>
-                            <h3 class="d-sm-block d-none cd-headline clip text-uppercase">I'm
-                                <span class="cd-words-wrapper">
-                                    <b class="is-visible">Nauman</b>
-                                    <b class="is-hidden">a web developer</b>
-                                    <!-- <b class="is-hidden">a web developer</b>
-                                        <b class="is-hidden">a logo designer</b> -->
+                        <div class="banner-text text-center">
+                            <p class="banner-eyebrow">Hi There!</p>
+                            <h1 class="banner-heading text-uppercase">
+                                <span class="d-sm-none headline">I'm <b>Nauman</b></span>
+                                <span class="d-none d-sm-inline cd-headline clip">I'm
+                                    <span class="cd-words-wrapper">
+                                        <b class="is-visible">Nauman</b>
+                                        <b class="is-hidden">a Frontend Developer</b>
+                                    </span>
                                 </span>
-                            </h3>
-                            <p>I'm a Frontend Developer with over 6+ years of experience. I create responsive web
-                                applications through carefully crafted design.</p>
+                            </h1>
+                            <p class="banner-lead">Frontend Developer with 5+ years building eCommerce, ERP and SaaS
+                                web apps in Angular, React and TypeScript, plus backend REST APIs with Node.js &amp;
+                                Express.</p>
                             <div class="social-links justify-content-center d-flex flex-wrap">
                                 <a href="https://www.linkedin.com/in/nouman-saleem-0b34941a1/" target="_blank"
-                                    data-toggle="tooltip" data-placement="top" data-original-title="Linkedin"><i
-                                        class="fa fa-linkedin"></i></a>
-                                <a href="https://github.com/NaumanSaleem22" target="_blank" data-toggle="tooltip"
-                                    data-placement="top" data-original-title="Github"><i class="fa fa-github"></i></a>
-
-                                <a href="https://m.facebook.com/nouman.saleem.798" target="_blank" data-toggle="tooltip"
-                                    data-placement="top" data-original-title="Facebook"><i
-                                        class="fa fa-facebook"></i></a>
-                                <a href="https://twitter.com/highonatoms" target="_blank" data-toggle="tooltip"
-                                    data-placement="top" data-original-title="Twitter"><i class="fa fa-twitter"></i></a>
-
+                                    rel="noopener" aria-label="LinkedIn" data-toggle="tooltip" data-placement="top"
+                                    data-original-title="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                <a href="https://github.com/NaumanSaleem22" target="_blank" rel="noopener"
+                                    aria-label="GitHub" data-toggle="tooltip" data-placement="top"
+                                    data-original-title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                <a href="mailto:noumansaleem1999@gmail.com" aria-label="Email" data-toggle="tooltip"
+                                    data-placement="top" data-original-title="Email"><i class="fa fa-envelope"
+                                        aria-hidden="true"></i></a>
+                                <a href="https://m.facebook.com/nouman.saleem.798" target="_blank" rel="noopener"
+                                    aria-label="Facebook" data-toggle="tooltip" data-placement="top"
+                                    data-original-title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="https://twitter.com/highonatoms" target="_blank" rel="noopener"
+                                    aria-label="Twitter" data-toggle="tooltip" data-placement="top"
+                                    data-original-title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                             </div>
                             <div class="info-button">
-                                <a href="#about" class="btn btn-secondary about-btn mr-sm-3"><span><i
-                                            class="fa fa-user mr-2"></i>My Details</span></a>
-                                <a href="#contact" class="btn btn-primary portfolio-btn mb-0"><span><i
-                                            class="fa fa-rocket mr-2"></i>My portfolio</span></a>
+                                <a href="#portfolio" class="btn btn-primary portfolio-btn mr-sm-3"><span><i
+                                            class="fa fa-rocket mr-2" aria-hidden="true"></i>View my work</span></a>
+                                <a href="Nauman_Saleem_Frontend_Developer.pdf" download
+                                    class="btn btn-secondary mb-0"><span><i class="fa fa-download mr-2"
+                                            aria-hidden="true"></i>Download CV</span></a>
                             </div>
                         </div>
                         <!-- End Banner Text -->
                     </div>
                     <!-- Banner Inner -->
                     <!-- Bottom Scroll Arrow -->
-                    <div class="scroll-down-arrow smooth-scroll-down about-btn d-none d-lg-block"></div>
+                    <div class="scroll-down-arrow smooth-scroll-down about-btn d-none d-lg-block" aria-hidden="true">
+                    </div>
                     <!-- End Bottom Scroll Arrow -->
                 </div>
                 <!-- End Container -->
@@ -167,7 +213,7 @@
                 <div class="container">
                     <!-- Section Title -->
                     <div class="section-title">
-                        <h1>About <span>me</span></h1>
+                        <h2>About <span>me</span></h2>
                         <span class="separator"></span>
                     </div>
                     <!-- End Section Title -->
@@ -177,38 +223,42 @@
                         <div class="row">
                             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="about-text">
-                                    <h4>Hello! I'M <span>NAUMAN</span></h4>
-                                    <p>I'm a Front-End Developer with a proven experience of 6+ years. I have worked on
-                                        different technologies including HTML, CSS, SCSS, Bootstrap, Javascript,
-                                        Jquery,Angular, Odoo Websites ReactJS, NextJS and Wordpress.
-                                        Using these technologies, I have developed responsive webpages, landing pages,
-                                        Responsive and different interactive webpages. </p>
-                                    <a class="mb-4 mb-lg-0 btn btn-primary"
-                                        href="./Nauman_Saleem_Frontend_Developer.pdf"
-                                        download="Nauman_Saleem_Frontend_Developer"><span><i
-                                                class="fa fa-download mr-2"></i>Download my
-                                            cv</span></a>
+                                    <h3>Hello! I'm <span>Nauman</span></h3>
+                                    <p>I'm a Frontend Developer based in Karachi with 5+ years of turning business
+                                        requirements into fast, responsive web applications. I've led builds end to
+                                        end, from Oakland's company website with its marketplace and helpdesk to a
+                                        large Odoo eCommerce store and an Angular PWA for grocery price comparison.</p>
+                                    <p>My core stack is Angular, React and TypeScript, with deep experience
+                                        customizing Odoo themes and modules. On the backend, I build REST APIs with
+                                        Node.js, Express and MongoDB, with authentication, protected routes and custom
+                                        middleware.</p>
+                                    <a class="mb-4 mb-lg-0 btn btn-primary" href="Nauman_Saleem_Frontend_Developer.pdf"
+                                        download><span><i class="fa fa-download mr-2" aria-hidden="true"></i>Download
+                                            my CV</span></a>
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="about-details clearfix">
-                                    <ul class="float-left w-40 pr-2">
+                                <div class="about-details row">
+                                    <ul class="col-sm-5">
                                         <li class="mb-1"><span>Name :</span> <span>Nauman Saleem</span></li>
                                         <li class="mb-1"><span>Address :</span> <span>Karachi, Pakistan</span></li>
-                                        <li class="mb-1"><span>Experience :</span> <span>6+ years</span></li>
+                                        <li class="mb-1"><span>Experience :</span> <span>5+ years</span></li>
                                         <li class="mb-1"><span>Freelance :</span> <span>Available</span></li>
+                                        <li class="mb-1"><span>Degree :</span> <span>BS Computer Science</span></li>
+                                        <li class="mb-1"><span>CGPA :</span> <span>3.5 / 4.0</span></li>
                                     </ul>
-                                    <ul class="float-right w-60 pl-2">
-                                        <li class="mb-1"><span>Phone :</span> <span><a href="tel:+011234567890">(+92)
+                                    <ul class="col-sm-7">
+                                        <li class="mb-1"><span>Phone :</span> <span><a href="tel:+923492182326">(+92)
                                                     349 2182326</a></span></li>
                                         <li class="mb-1"><span>E-mail :</span> <span><a
                                                     href="mailto:noumansaleem1999@gmail.com">noumansaleem1999@gmail.com</a></span>
                                         </li>
-                                        <!-- <li class="mb-1"><span>Skype :</span> <span>your_name</span></li> -->
-                                        <li class="mb-1"><span>Language :</span> <span> English, Urdu</span></li>
+                                        <li class="mb-1"><span>Language :</span> <span>English, Urdu</span></li>
+                                        <li class="mb-1"><span>University :</span> <span>Iqra University, Karachi
+                                                (2018 – 2022)</span></li>
                                         <li class="mb-1"><span>Github :</span> <span><a
-                                                    href="https://github.com/NaumanSaleem22/"
-                                                    target="_blank">www.github.com/NaumanSaleem22/</a></span>
+                                                    href="https://github.com/NaumanSaleem22/" target="_blank"
+                                                    rel="noopener">github.com/NaumanSaleem22</a></span>
                                         </li>
                                     </ul>
                                 </div>
@@ -217,153 +267,151 @@
                         <!-- End Row -->
                     </div>
                     <!-- End Info Content Block -->
-                    <!-- Experience Education Content Block -->
+                    <!-- Experience Content Block -->
                     <div class="content-block">
-                        <!-- Section Sub Title -->
-                        <h3 class="section-subtitle text-center text-uppercase mb-5">Experience &amp; Education</h3>
-                        <!-- End Section Sub Title -->
-                        <!-- Row -->
-                        <div class="row">
-                            <!-- Education -->
-                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <h4 class="education-title block-title text-center text-uppercase mb-4">Education
-                                </h4>
-                                <div class="education pl-4">
-
-                                    <div class="education-box mb-4">
-                                        <h5 class="box-title">Bachelor Degree</h5>
-                                        <div class="item-details mb-2 mb-sm-1">
-                                            <span class="university d-inline-block mr-3"><i
-                                                    class="fa fa-book mr-2"></i>Iqra University</span>
-                                            <span class="year d-inline-block"><i class="fa fa-calendar mr-2"></i>Jan
-                                                2018 - Feb 2022</span>
-                                        </div>
-                                        <p class="box-description">Bachelors of Computer Science <br /> 3.5 CGPA</p>
+                        <h3 class="section-subtitle text-center text-uppercase mb-5">Experience</h3>
+                        <div class="row row-items card-grid">
+                            <div class="col-md-6 row-item d-flex">
+                                <div class="experince-box w-100">
+                                    <h4 class="box-title h5">Frontend Developer</h4>
+                                    <div class="item-details mb-2 mb-sm-1">
+                                        <span class="university d-inline-block mr-3"><i class="fa fa-briefcase mr-2"
+                                                aria-hidden="true"></i>Oakland</span>
+                                        <span class="year d-inline-block"><i class="fa fa-calendar mr-2"
+                                                aria-hidden="true"></i>Nov 2023 – Feb 2026</span>
                                     </div>
-                                    <div class="education-box mb-4 mb-lg-0">
-                                        <h5 class="box-title">Intermediate</h5>
-                                        <div class="item-details mb-2 mb-sm-1">
-                                            <span class="university d-inline-block mr-3"><i
-                                                    class="fa fa-book mr-2"></i>PECHS Education College</span>
-                                            <span class="year d-inline-block"><i class="fa fa-calendar mr-2"></i>May
-                                                2015 - Apr 2017</span>
-                                        </div>
-                                        <p class="box-description">Pre - Engineering <br /> B Grade</p>
-                                    </div>
-                                    <div class="education-box mb-4">
-                                        <h5 class="box-title">Matriculation</h5>
-                                        <div class="item-details mb-2 mb-sm-1">
-                                            <span class="university d-inline-block mr-3"><i
-                                                    class="fa fa-book mr-2"></i>Karachi Folk's High School</span>
-                                            <span class="year d-inline-block"><i class="fa fa-calendar mr-2"></i>Jan
-                                                2004 - June 2015</span>
-                                        </div>
-                                        <p class="box-description">Science <br /> A Grade
-                                        </p>
-                                    </div>
+                                    <ul class="box-points">
+                                        <li>Clients had no single place to find add-ons or get support, so I led Oakland's new website end to end, with a Marketplace and Helpdesk ticketing, reducing onboarding friction.</li>
+                                        <li>Built 7md, an Odoo eCommerce store for thousands of SKUs, from scratch with custom QWeb themes, plus a "Customize Your Gift" configurator for BasicBlooms.</li>
+                                    </ul>
                                 </div>
                             </div>
-                            <!-- End Education -->
-                            <!-- Experience -->
-                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <h4 class="experince-title block-title text-center text-uppercase mb-4">Experience
-                                </h4>
-                                <div class="experince pl-4">
-                                    <div class="experince-box mb-4">
-                                        <h5 class="box-title">Senior Front-End Developer</h5>
-                                        <div class="item-details mb-2 mb-sm-1">
-                                            <span class="university d-inline-block mr-3"><i
-                                                    class="fa fa-book mr-2"></i>Krystosoft </span>
-                                            <span class="year d-inline-block"><i class="fa fa-calendar mr-2"></i>Nov
-                                                2022 -<span
-                                                    class="badge badge-success current ml-2">Present</span></span>
-                                        </div>
-                                        <p class="box-description"> Implemented responsive websites and landing pages
-                                            from concept through deployment. Collaborated with product team members to
-                                            implement new feature developments. </p>
+                            <div class="col-md-6 row-item d-flex">
+                                <div class="experince-box w-100">
+                                    <h4 class="box-title h5">Frontend Developer</h4>
+                                    <div class="item-details mb-2 mb-sm-1">
+                                        <span class="university d-inline-block mr-3"><i class="fa fa-briefcase mr-2"
+                                                aria-hidden="true"></i>GNT Group – Krystosoft</span>
+                                        <span class="year d-inline-block"><i class="fa fa-calendar mr-2"
+                                                aria-hidden="true"></i>Nov 2022 – Nov 2023</span>
                                     </div>
-                                    <div class="experince-box mb-4">
-                                        <h5 class="box-title">Front-End Developer</h5>
-                                        <div class="item-details mb-2 mb-sm-1">
-                                            <span class="university d-inline-block mr-3"><i
-                                                    class="fa fa-book mr-2"></i>Designer Dev</span>
-                                            <span class="year d-inline-block"><i class="fa fa-calendar mr-2"></i>Aug
-                                                2021 - Nov 2022</span>
-                                        </div>
-                                        <p class="box-description">Collaborated with team members to implement different
-                                            projects using different technologies like HTML, CSS, Bootstrap, Javascript,
-                                            ReactJs, & NextJs. Assessed UX and UI designs for technical feasibility.
-                                        </p>
-                                    </div>
-                                    <div class="experince-box mb-lg-0">
-                                        <h5 class="box-title">Front-End Developer Internee</h5>
-                                        <div class="item-details mb-2 mb-sm-1">
-                                            <span class="university d-inline-block mr-3"><i
-                                                    class="fa fa-book mr-2"></i>Devnest</span>
-                                            <span class="year d-inline-block"><i class="fa fa-calendar mr-2"></i>May
-                                                2021 - July 2021</span>
-                                        </div>
-                                        <p class="box-description"> Gained experience by working on different live
-                                            projects. Managed and developed different projects including Ecommerce
-                                            websites.
-                                        </p>
-                                    </div>
+                                    <ul class="box-points">
+                                        <li>Grocery shoppers couldn't compare prices across nearby stores, so I built Sastatareen, a mobile-first Angular PWA with store-proximity matching.</li>
+                                        <li>Delivered Avatar Academy, an Angular e-learning portal with role-based access, and a React coworking-space platform.</li>
+                                    </ul>
                                 </div>
                             </div>
-                            <!-- End Experience -->
+                            <div class="col-md-6 row-item d-flex">
+                                <div class="experince-box w-100">
+                                    <h4 class="box-title h5">Junior Frontend Developer</h4>
+                                    <div class="item-details mb-2 mb-sm-1">
+                                        <span class="university d-inline-block mr-3"><i class="fa fa-briefcase mr-2"
+                                                aria-hidden="true"></i>Designer Dev</span>
+                                        <span class="year d-inline-block"><i class="fa fa-calendar mr-2"
+                                                aria-hidden="true"></i>Sep 2021 – Nov 2022</span>
+                                    </div>
+                                    <ul class="box-points">
+                                        <li>Customers in Oman needed to track parcels across regions, so I built the responsive, localized frontend for Dalilee's courier platform.</li>
+                                        <li>Reviewed UI/UX designs for feasibility before build, so designs shipped as intended.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 row-item d-flex">
+                                <div class="experince-box w-100">
+                                    <h4 class="box-title h5">Frontend Developer Intern</h4>
+                                    <div class="item-details mb-2 mb-sm-1">
+                                        <span class="university d-inline-block mr-3"><i class="fa fa-briefcase mr-2"
+                                                aria-hidden="true"></i>Devnest</span>
+                                        <span class="year d-inline-block"><i class="fa fa-calendar mr-2"
+                                                aria-hidden="true"></i>Jun 2021 – Aug 2021</span>
+                                    </div>
+                                    <ul class="box-points">
+                                        <li>Contributed to live eCommerce projects in production.</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                        <!-- End Row -->
                     </div>
-                    <!-- End Experience Education Content Block -->
+                    <!-- End Experience Content Block -->
                     <!-- Skill Content Block -->
                     <div class="content-block skills">
-                        <h4 class="block-title text-center text-uppercase mb-4 pb-2">Skills</h4>
-                        <!-- Skill Row -->
-                        <div class="row">
-                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="skill-item">
-                                    <p class="skill-name">HTML, CSS & SCSS</p>
-                                    <div id="html"></div>
+                        <h3 class="section-subtitle text-center text-uppercase mb-5">Skills</h3>
+                        <div class="row row-items">
+                            <div class="col-md-6 row-item">
+                                <div class="skill-group">
+                                    <h4>Frontend</h4>
+                                    <ul class="skill-tags">
+                                        <li>Angular</li>
+                                        <li>React.js</li>
+                                        <li>Next.js</li>
+                                        <li>TypeScript</li>
+                                        <li>JavaScript (ES6+)</li>
+                                        <li>HTML5</li>
+                                        <li>CSS3 / SCSS</li>
+                                        <li>TailwindCSS</li>
+                                        <li>Bootstrap</li>
+                                        <li>jQuery</li>
+                                    </ul>
                                 </div>
-                                <div class="skill-item mt-4">
-                                    <p class="skill-name">Odoo Websites</p>
-                                    <div id="css"></div>
-                                </div>
-                                <div class="skill-item mt-4">
-                                    <p class="skill-name">Bootstrap</p>
-                                    <div id="web-design"></div>
-                                </div>
-                                <div class="skill-item mt-4">
-                                    <p class="skill-name">JavaScript</p>
-                                    <div id="javascript"></div>
-                                </div>
-
-
                             </div>
-                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="skill-item mt-4 mt-lg-0">
-                                    <p class="skill-name">ReactJS</p>
-                                    <div id="php"></div>
-
+                            <div class="col-md-6 row-item">
+                                <div class="skill-group">
+                                    <h4>Backend</h4>
+                                    <ul class="skill-tags">
+                                        <li>Node.js</li>
+                                        <li>Express.js</li>
+                                        <li>REST APIs</li>
+                                        <li>Authentication</li>
+                                        <li>Middleware</li>
+                                        <li>MongoDB</li>
+                                        <li>PostgreSQL (basic)</li>
+                                    </ul>
+                                    <p class="skill-note">CRUD REST APIs on MongoDB with authentication, protected
+                                        routes and custom middleware.</p>
                                 </div>
-                                <div class="skill-item mt-4">
-                                    <p class="skill-name">Angular</p>
-                                    <div id="angular"></div>
-
+                            </div>
+                            <div class="col-md-6 row-item">
+                                <div class="skill-group">
+                                    <h4>ERP &amp; CMS</h4>
+                                    <ul class="skill-tags">
+                                        <li>Odoo Theme Development</li>
+                                        <li>Odoo Custom Modules</li>
+                                        <li>QWeb</li>
+                                        <li>WordPress</li>
+                                    </ul>
                                 </div>
-                                <div class="skill-item mt-4">
-                                    <p class="skill-name">WordPress</p>
-                                    <div id="wordpress"></div>
+                            </div>
+                            <div class="col-md-6 row-item">
+                                <div class="skill-group">
+                                    <h4>AI &amp; Agentic Development</h4>
+                                    <ul class="skill-tags">
+                                        <li>Agentic AI Workflows</li>
+                                        <li>Claude Code</li>
+                                        <li>Claude Cowork</li>
+                                        <li>Claude</li>
+                                        <li>GitHub Copilot</li>
+                                        <li>Cursor AI</li>
+                                        <li>AI-Powered App Development</li>
+                                    </ul>
                                 </div>
-                                <div class="skill-item mt-4">
-                                    <p class="skill-name">Github</p>
-                                    <div id="jquery"></div>
+                            </div>
+                            <div class="col-12 row-item">
+                                <div class="skill-group">
+                                    <h4>Tools &amp; Workflow</h4>
+                                    <ul class="skill-tags">
+                                        <li>Git &amp; GitHub</li>
+                                        <li>Postman</li>
+                                        <li>VS Code</li>
+                                        <li>Jira</li>
+                                        <li>Trello</li>
+                                        <li>ClickUp</li>
+                                        <li>Agile / Scrum</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                        <!-- End Skill Row -->
                     </div>
-
+                    <!-- End Skill Content Block -->
                 </div>
                 <!-- End Container -->
             </section>
@@ -375,7 +423,7 @@
                 <div class="container">
                     <!-- Section Title -->
                     <div class="section-title">
-                        <h1>My <span>Services</span></h1>
+                        <h2>My <span>Services</span></h2>
                         <span class="separator"></span>
                     </div>
                     <!-- End Section Title -->
@@ -383,110 +431,67 @@
                     <div class="content-block content-service-block">
                         <!-- Service Row -->
                         <div class="row row-items">
-                            <!-- Service One -->
-                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 row-item">
+                            <div class="col-lg-4 col-md-6 col-12 row-item d-flex">
                                 <div class="card-body text-center">
-                                    <div class="card-icon"><i class="fa fa-html5"></i></div>
+                                    <div class="card-icon"><i class="fa fa-code" aria-hidden="true"></i></div>
                                     <div class="card-title">
-                                        <h4>Web Development</h4>
+                                        <h3>Angular &amp; React Apps</h3>
                                     </div>
-
+                                    <p>SPAs, PWAs and portals in TypeScript, built from reusable components.</p>
                                 </div>
                             </div>
-                            <!-- End Service One -->
-                            <!-- Service Two -->
-                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 row-item">
+                            <div class="col-lg-4 col-md-6 col-12 row-item d-flex">
                                 <div class="card-body text-center">
-                                    <div class="card-icon"><i class="fa fa-code"></i></div>
+                                    <div class="card-icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
                                     <div class="card-title">
-                                        <h4>Code Structure</h4>
+                                        <h3>Odoo Websites &amp; eCommerce</h3>
                                     </div>
-
+                                    <p>Custom QWeb themes, modules and storefronts on Odoo.</p>
                                 </div>
                             </div>
-                            <!-- End Service Two -->
-                            <!-- Service Three -->
-                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 row-item">
+                            <div class="col-lg-4 col-md-6 col-12 row-item d-flex">
                                 <div class="card-body text-center">
-                                    <div class="card-icon"><i class="fa fa-paint-brush"></i></div>
+                                    <div class="card-icon"><i class="fa fa-mobile" aria-hidden="true"></i></div>
                                     <div class="card-title">
-                                        <h4>Reusable Code</h4>
+                                        <h3>Responsive UI</h3>
                                     </div>
-
+                                    <p>Mobile-first, pixel-perfect layouts that work across browsers and
+                                        breakpoints.</p>
                                 </div>
                             </div>
-                            <!-- End Service Three -->
-                            <!-- Service Four -->
-                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 row-item">
+                            <div class="col-lg-4 col-md-6 col-12 row-item d-flex">
                                 <div class="card-body text-center">
-                                    <div class="card-icon"><i class="fa fa-mobile"></i></div>
+                                    <div class="card-icon"><i class="fa fa-tachometer" aria-hidden="true"></i></div>
                                     <div class="card-title">
-                                        <h4>Responsive Design</h4>
+                                        <h3>Performance</h3>
                                     </div>
-
+                                    <p>Fast pages with optimized assets, targeting sub-3-second load times.</p>
                                 </div>
                             </div>
-                            <!-- End Service Four -->
-                            <!-- Service Five -->
-                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 row-item">
+                            <div class="col-lg-4 col-md-6 col-12 row-item d-flex">
                                 <div class="card-body text-center">
-                                    <div class="card-icon"><i class="fa fa-bar-chart"></i></div>
+                                    <div class="card-icon"><i class="fa fa-plug" aria-hidden="true"></i></div>
                                     <div class="card-title">
-                                        <h4>Optimized Webpages</h4>
+                                        <h3>API Integration</h3>
                                     </div>
-
+                                    <p>Connecting frontends to REST APIs with clean data flows and error
+                                        handling.</p>
                                 </div>
                             </div>
-                            <!-- End Service Five -->
-                            <!-- Service Six -->
-                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 row-item">
+                            <div class="col-lg-4 col-md-6 col-12 row-item d-flex">
                                 <div class="card-body text-center">
-                                    <div class="card-icon"><i class="fa fa-pencil-square-o"></i></div>
+                                    <div class="card-icon"><i class="fa fa-server" aria-hidden="true"></i></div>
                                     <div class="card-title">
-                                        <h4>Great User Experience</h4>
+                                        <h3>Node.js &amp; Express APIs</h3>
                                     </div>
-
+                                    <p>CRUD REST APIs on MongoDB with authentication, protected routes and
+                                        custom middleware.</p>
                                 </div>
                             </div>
-                            <!-- End Service Six -->
-                            <!-- Service Seven -->
-                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 row-item">
-                                <div class="card-body text-center">
-                                    <div class="card-icon"><i class="fa fa-tachometer"></i></div>
-                                    <div class="card-title">
-                                        <h4>Performance</h4>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <!-- End Service Seven -->
-                            <!-- Service Eight -->
-                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 row-item">
-                                <div class="card-body text-center">
-                                    <div class="card-icon"><i class="fa fa-file-code-o"></i></div>
-                                    <div class="card-title">
-                                        <h4>Reusable Components</h4>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <!-- End Service Eight -->
-                            <!-- Service Nine -->
-                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 row-item">
-                                <div class="card-body text-center">
-                                    <div class="card-icon"><i class="fa fa-handshake-o"></i></div>
-                                    <div class="card-title">
-                                        <h4>Life Time Support</h4>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <!-- End Service Nine -->
                         </div>
                         <!-- End Service Row -->
                     </div>
                     <!-- End Service Content Block -->
-
                 </div>
                 <!-- End Container -->
             </section>
@@ -498,1094 +503,873 @@
                 <div class="container">
                     <!-- Section Title -->
                     <div class="section-title">
-                        <h1>My <span>Portfolio</span></h1>
+                        <h2>My <span>Portfolio</span></h2>
                         <span class="separator"></span>
                     </div>
                     <!-- End Section Title -->
-                    <!-- Row -->
-                    <div class="row">
-                        <div class="col-12 d-flex justify-content-center mb-4">
-                            <!-- Portfolio Filter -->
-                            <ul id="portfolio-flters">
-                                <li class="btn filter-active" data-filter="*">All Work</li>
-                                <li class="btn" data-filter=".filter-ecommerce">Ecommerce</li>
-                                <li class="btn" data-filter=".filter-landing">Landing Pages</li>
-                                <li class="btn" data-filter=".filter-tools">Tools</li>
-                            </ul>
-                            <!-- End Portfolio Filter -->
-                        </div>
+                    <!-- Portfolio Filter -->
+                    <div id="portfolio-flters" class="text-center mb-4" role="group" aria-label="Filter projects">
+                        <button type="button" class="btn filter-active" data-filter="*" aria-pressed="true">All
+                            Work</button>
+                        <button type="button" class="btn" data-filter=".filter-ecommerce"
+                            aria-pressed="false">Ecommerce</button>
+                        <button type="button" class="btn" data-filter=".filter-landing" aria-pressed="false">Websites
+                            &amp; Landing Pages</button>
+                        <button type="button" class="btn" data-filter=".filter-tools"
+                            aria-pressed="false">Tools</button>
                     </div>
-                    <!-- End Row -->
+                    <!-- End Portfolio Filter -->
                     <!-- Row -->
-                    <div class="row row-items portfolio-container project-gallery-item">
+                    <div class="row row-items portfolio-container">
 
-
-
-                        <!-- LeoFren Starts -->
-                        <div
-                            class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-landing  ">
-                            <a href="https://leofren.netlify.app/" target="_blank">
+                        <!-- 7md -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-ecommerce">
+                            <a class="portfolio-card" href="https://www.7md.ae/" target="_blank" rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/leofren6.png" class="img-fluid" alt="Portfolio 3" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Corporate Theme</h4>
-                                            <p>Website for a Software House </p>
-
-                                        </div>
+                                    <img src="assets/images/projects/7md.webp" width="800" height="640"
+                                        loading="lazy" alt="7md online store homepage" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Visit site <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Ecommerce · Odoo</span>
+                                    <h3>7md</h3>
+                                    <p>Large Odoo store with custom QWeb themes, built for thousands of SKUs.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- Leofren Ends -->
 
-                        <!-- Apex  Starts -->
-                        <div
-                            class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-landing  ">
-                            <a href="https://apexoutsourced.com/" target="_blank">
+                        <!-- Yah Oud -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-ecommerce">
+                            <a class="portfolio-card" href="https://www.yahoud.ae/en/" target="_blank" rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/apex.png" class="img-fluid" alt="Portfolio 3" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Apex Outsourced</h4>
-                                            <p>Website for an Outsourcing Company </p>
-
-                                        </div>
+                                    <img src="assets/images/projects/yahoud.webp" width="800" height="640"
+                                        loading="lazy" alt="Yah Oud perfume store homepage" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Visit site <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Ecommerce</span>
+                                    <h3>Yah Oud</h3>
+                                    <p>Perfume eCommerce website.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- Apex Ends -->
 
-                        <!-- Drive Lab Configurator Starts -->
-                        <div
-                            class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-landing  filter-tools">
-                            <a href="https://drivelab-configurator.netlify.app/" target="_blank">
+                        <!-- Hawabox -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-ecommerce filter-landing">
+                            <a class="portfolio-card" href="https://www.hawabox.com/" target="_blank" rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/drivelab.png" class="img-fluid" alt="Portfolio 3" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Drive Lab Configurator</h4>
-                                            <p>ThreeJS Website with GSAP Animations </p>
-
-                                        </div>
+                                    <img src="assets/images/projects/hawabox.webp" width="800" height="640"
+                                        loading="lazy" alt="Hawabox store homepage" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Visit site <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Ecommerce</span>
+                                    <h3>Hawabox</h3>
+                                    <p>Ecommerce website for an experience store.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- Drive Lab Configurator Ends -->
 
-                        <!-- Zarkash Starts -->
-                        <div
-                            class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-landing  ">
-                            <a href="https://zarkashinternational.com/" target="_blank">
+                        <!-- Impression De Braem -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-ecommerce filter-landing">
+                            <a class="portfolio-card" href="https://www.impressiondebraem.com/" target="_blank"
+                                rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/zarkash.png" class="img-fluid" alt="Portfolio 3" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Zarkash International</h4>
-                                            <p>Website for a Textile Manufacturing & Export Company </p>
-
-                                        </div>
+                                    <img src="assets/images/projects/debraem.webp" width="800" height="640"
+                                        loading="lazy" alt="Impression De Braem perfume store homepage" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Visit site <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Ecommerce</span>
+                                    <h3>Impression De Braem</h3>
+                                    <p>Ecommerce perfume store.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- Zarkash Ends -->
-                        <!-- Baseline Starts -->
-                        <div
-                            class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-landing  ">
-                            <a href="https://baselinetennisacademy.pk/" target="_blank">
-                                <div class="portfolio-wrap">
-                                    <img src="assets/images/baseline.png" class="img-fluid" alt="Portfolio 3" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4> Ecommerce & Sports Website</h4>
-                                            <p>Website for a tennis sports academy </p>
 
-                                        </div>
+                        <!-- Goody Culinary Solutions -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-ecommerce">
+                            <a class="portfolio-card" href="https://goodycs.com/en" target="_blank" rel="noopener">
+                                <div class="portfolio-wrap">
+                                    <img src="assets/images/projects/goody.webp" width="800" height="640"
+                                        loading="lazy" alt="Goody Culinary Solutions homepage" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Visit site <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Ecommerce</span>
+                                    <h3>Goody Culinary Solutions</h3>
+                                    <p>Food recipe and product website.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- Baseline Ends -->
-                        <!-- Brandflow  Starts -->
-                        <div
-                            class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-landing  ">
-                            <a href="https://brandflow-agency.netlify.app/" target="_blank">
-                                <div class="portfolio-wrap">
-                                    <img src="assets/images/brandflow.jpg" class="img-fluid" alt="Portfolio 3" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>BrandFlow - Creative Agency </h4>
-                                            <p>Website for an Creative Agency using GSAP </p>
 
-                                        </div>
+                        <!-- Kasmy Pack -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-ecommerce">
+                            <a class="portfolio-card" href="https://kasmy.com.pk/" target="_blank" rel="noopener">
+                                <div class="portfolio-wrap">
+                                    <img src="assets/images/projects/kasmypk.webp" width="800" height="640"
+                                        loading="lazy" alt="Kasmy Pack homepage" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Visit site <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Ecommerce</span>
+                                    <h3>Kasmy Pack</h3>
+                                    <p>Website for Kasmy Pack.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- Brandflow Ends -->
 
-
-
-
-                        <!-- 7md Starts -->
-                        <div
-                            class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-landing filter-ecommerce">
-                            <a href="https://www.7md.ae/" target="_blank">
+                        <!-- Apex Outsourced -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-landing">
+                            <a class="portfolio-card" href="https://apexoutsourced.com/" target="_blank" rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/7md.png" class="img-fluid" alt="Portfolio 3" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>7md Website</h4>
-                                            <p>Ecommerce Website for 7md Store</p>
-
-                                        </div>
+                                    <img src="assets/images/projects/apex.webp" width="800" height="640"
+                                        loading="lazy" alt="Apex Outsourced homepage" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Visit site <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Website</span>
+                                    <h3>Apex Outsourced</h3>
+                                    <p>Website for an outsourcing company.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- 7md Ends -->
 
-
-                        <!-- Invoice Maker Starts -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-tools">
-                            <a href="https://invoice-maker-online12.netlify.app/" target="_blank">
+                        <!-- Zarkash International -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-landing">
+                            <a class="portfolio-card" href="https://zarkashinternational.com/" target="_blank"
+                                rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/invoice-maker.png" class="img-fluid" alt="Portfolio 3" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Invoice Maker </h4>
-                                            <p>Create invoices that
-                                                look professional for free.
-                                            </p>
-                                        </div>
+                                    <img src="assets/images/projects/zarkash.webp" width="800" height="640"
+                                        loading="lazy" alt="Zarkash International services page" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Visit site <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Website</span>
+                                    <h3>Zarkash International</h3>
+                                    <p>Website for a textile manufacturing &amp; export company.</p>
                                 </div>
                             </a>
                         </div>
-                        <!--  Invoice Maker Ends -->
 
-                        <!-- Yahoud Starts -->
-                        <div
-                            class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-ecommerce">
-                            <a href="https://www.yahoud.ae/en/" target="_blank">
+                        <!-- Saka International -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-landing">
+                            <a class="portfolio-card" href="https://sakainternationalreal.com/" target="_blank"
+                                rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/yahoud.png" class="img-fluid" alt="Portfolio 3"
-                                        style="height: 280px;object-fit: cover;" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Yah oud</h4>
-                                            <p>Perfume Ecommerce Website</p>
-
-                                        </div>
+                                    <img src="assets/images/projects/saka.webp" width="350" height="277"
+                                        loading="lazy" alt="Saka International homepage" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Visit site <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Website</span>
+                                    <h3>Saka International</h3>
+                                    <p>Website for a textile manufacturing &amp; export company.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- Yahoud Ends -->
 
-                        <!-- Resume Builder Starts -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-tools">
-                            <a href="https://resume-builder-online1.netlify.app/" target="_blank">
+                        <!-- Leofren -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-landing">
+                            <a class="portfolio-card" href="https://leofren.netlify.app/" target="_blank" rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/resume-builder.png" class="img-fluid" alt="Portfolio 3" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Resume Builder </h4>
-                                            <p>Build your resume for free.
-                                            </p>
-                                        </div>
+                                    <img src="assets/images/projects/leofren6.webp" width="800" height="640"
+                                        loading="lazy" alt="Corporate software house website homepage" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Visit site <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Website</span>
+                                    <h3>Corporate Theme</h3>
+                                    <p>Website for a software house.</p>
                                 </div>
                             </a>
                         </div>
-                        <!--  Resume Builder Ends -->
 
-
-
-
-                        <!-- Suits Starts -->
-                        <div
-                            class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-landing filter-ecommerce">
-                            <a href="https://suits24.netlify.app/" target="_blank">
+                        <!-- Suits Coworking -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-landing filter-ecommerce">
+                            <a class="portfolio-card" href="https://suits24.netlify.app/" target="_blank" rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/suit3.png" class="img-fluid" alt="Portfolio 3" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Coworking Space</h4>
-                                            <p>WebApp for Coworking Spaces </p>
-
-                                        </div>
+                                    <img src="assets/images/projects/suit3.webp" width="800" height="640"
+                                        loading="lazy" alt="Suits coworking space web app homepage" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Visit site <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Web App</span>
+                                    <h3>Coworking Space</h3>
+                                    <p>Web app for finding coworking spaces.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- Suits Ends -->
 
-                        <!-- Hawabox Starts -->
-                        <div
-                            class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-landing filter-ecommerce">
-                            <a href="https://www.hawabox.com/" target="_blank">
+                        <!-- Baseline Tennis Academy -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-landing">
+                            <a class="portfolio-card" href="https://baselinetennisacademy.pk/" target="_blank"
+                                rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/hawabox.jpg" class="img-fluid" alt="Portfolio 3" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Hawabox</h4>
-                                            <p>Website for an Ecommerce Experience Store </p>
-
-                                        </div>
+                                    <img src="assets/images/projects/baseline.webp" width="800" height="640"
+                                        loading="lazy" alt="Baseline Tennis Academy homepage" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Visit site <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Ecommerce &amp; Sports</span>
+                                    <h3>Baseline Tennis Academy</h3>
+                                    <p>Website for a tennis sports academy.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- Hawabox ENds -->
 
-                        <!-- Oakland Starts -->
-                        <div
-                            class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-landing  ">
-                            <a>
+                        <!-- BrandFlow -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-landing">
+                            <a class="portfolio-card" href="https://brandflow-agency.netlify.app/" target="_blank"
+                                rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/oakland.png" class="img-fluid" alt="Portfolio 3" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Oakland Website</h4>
-                                            <p>Website for a Software House </p>
-
-                                        </div>
+                                    <img src="assets/images/projects/brandflow.webp" width="800" height="640"
+                                        loading="lazy" alt="BrandFlow creative agency homepage" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Visit site <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Website · GSAP</span>
+                                    <h3>BrandFlow</h3>
+                                    <p>Creative agency website with GSAP animations.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- Oakland ENds -->
 
-
-
-                        <!-- Currency Converter Starts -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-tools">
-                            <a href="https://currency-converter-online1.netlify.app/" target="_blank">
+                        <!-- Drive Lab Configurator -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-landing filter-tools">
+                            <a class="portfolio-card" href="https://drivelab-configurator.netlify.app/" target="_blank"
+                                rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/currency-converter.png" class="img-fluid"
-                                        alt="Portfolio 3" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Currency Converter</h4>
-                                            <p>Convert Your Currency for Free </p>
-
-                                        </div>
+                                    <img src="assets/images/projects/drivelab.webp" width="800" height="640"
+                                        loading="lazy" alt="Drive Lab 3D configurator" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Visit site <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Three.js · GSAP</span>
+                                    <h3>Drive Lab Configurator</h3>
+                                    <p>Three.js website with GSAP animations.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- Currency Converter Ends -->
 
-
-                        <!-- Clip Path Generator Starts -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-tools">
-                            <a href="https://css-clippath-generator.netlify.app/" target="_blank">
+                        <!-- The Bullpen -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item">
+                            <a class="portfolio-card" href="https://thebullpen.pk/" target="_blank" rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/clip-path-generator.png" class="img-fluid"
-                                        alt="Portfolio 3" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>CSS Clip Path Generator</h4>
-                                            <p>Generate CSS Shapes with Clip Path for Free </p>
-
-                                        </div>
+                                    <img src="assets/images/projects/bullpen.webp" width="800" height="640"
+                                        loading="lazy" alt="The Bullpen coworking space homepage" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Visit site <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Website</span>
+                                    <h3>The Bullpen</h3>
+                                    <p>Coworking space website.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- Clip Path Generator Ends -->
 
-                        <!-- AL Hor Starts -->
-                        <div
-                            class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-landing filter-ecommerce">
-                            <a>
+                        <!-- Hodophile Adventures -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item">
+                            <a class="portfolio-card" href="https://hodophile.pk/" target="_blank" rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/alhor.png" class="img-fluid" alt="Portfolio 3" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>AlHor Website</h4>
-                                            <p>Ecommerce Website for AlHor</p>
-
-                                        </div>
+                                    <img src="assets/images/projects/hodophile.webp" width="800" height="640"
+                                        loading="lazy" alt="Hodophile Adventures tour website homepage" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Visit site <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Website</span>
+                                    <h3>Hodophile Adventures</h3>
+                                    <p>Tour company website.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- Al Hor Ends -->
 
-
-
-
-                        <!-- Extract Text from Image Starts -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-tools">
-                            <a href="https://extract-text-image.netlify.app/" target="_blank">
+                        <!-- Rainbow Milk -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-ecommerce">
+                            <a class="portfolio-card" href="https://rainbowmilk.com/" target="_blank" rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/extract-text-image.png" class="img-fluid"
-                                        alt="Portfolio 3" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Extract Text from Image</h4>
-                                            <p>Extract Text From Any Image For Free </p>
-
-                                        </div>
+                                    <img src="assets/images/projects/rainbow.webp" width="800" height="640"
+                                        loading="lazy" alt="Rainbow Milk recipe website homepage" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Visit site <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Website</span>
+                                    <h3>Rainbow Milk</h3>
+                                    <p>Recipe website.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- Extract Text from Image Ends -->
 
-
-
-                        <!-- Favicon Generator Starts -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-tools">
-                            <a href="https://favicon-generator-online.netlify.app/" target="_blank">
+                        <!-- TechinPack -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item">
+                            <a class="portfolio-card" href="https://techinpack.com/" target="_blank" rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/favicon-generator.png" class="img-fluid"
-                                        alt="Portfolio 3" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Favicon Generator</h4>
-                                            <p>Generate Favicon For Free </p>
-
-                                        </div>
+                                    <img src="assets/images/projects/techinpack.webp" width="800" height="640"
+                                        loading="lazy" alt="TechinPack blog homepage" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Visit site <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Website</span>
+                                    <h3>TechinPack</h3>
+                                    <p>Blog website.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- Favicon Generator Ends -->
 
-
-                        <!-- Image Compressor Starts -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-tools">
-                            <a href="https://image-compressor-online1.netlify.app/" target="_blank">
+                        <!-- KZ Lab Solutions -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-landing">
+                            <a class="portfolio-card" href="https://kz-academic-guidance.netlify.app/" target="_blank"
+                                rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/image-compressor.png" class="img-fluid" alt="Portfolio 3" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Image Compressor</h4>
-                                            <p>Compress Any Image For Free </p>
-
-                                        </div>
+                                    <img src="assets/images/projects/tammylabsolutions.webp" width="800" height="640"
+                                        loading="lazy" alt="KZ Lab Solutions homepage" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Visit site <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Website</span>
+                                    <h3>KZ Lab Solutions</h3>
+                                    <p>Website for lab inspections.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- Image Compressor Ends -->
 
-                        <!-- Image Resizer Starts -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-tools">
-                            <a href="https://image-resizer-online1.netlify.app/" target="_blank">
+                        <!-- Marina Mall -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-landing">
+                            <a class="portfolio-card" href="https://marinamallnauman.netlify.app/" target="_blank"
+                                rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/image-resizer.png" class="img-fluid" alt="Portfolio 3" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Image Resizer</h4>
-                                            <p>Resizer Any Image For Free </p>
-
-                                        </div>
+                                    <img src="assets/images/projects/marinamall.webp" width="800" height="640"
+                                        loading="lazy" alt="Marina Mall landing page" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Visit site <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Landing Page</span>
+                                    <h3>Marina Mall</h3>
+                                    <p>Landing page for a shopping mall.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- Image Resizer Ends -->
 
-                        <!-- PDF Converter Starts -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-tools">
-                            <a href="https://pdf-image-word-converter.netlify.app/" target="_blank">
+                        <!-- ChatGPT3 -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-landing">
+                            <a class="portfolio-card" href="https://chat-gpt3-prac.netlify.app/" target="_blank"
+                                rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/pdf-converter.png" class="img-fluid" alt="Portfolio 3" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>PDF Converter</h4>
-                                            <p>Convert PDFs and images
-                                                either direction </p>
-
-                                        </div>
+                                    <img src="assets/images/projects/chatgpt3.webp" width="800" height="640"
+                                        loading="lazy" alt="GPT-3 landing page built with React" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Visit site <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Landing Page · React</span>
+                                    <h3>GPT-3 Landing Page</h3>
+                                    <p>Landing page built with React.js.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- PDF Converter Ends -->
 
-
-                        <!-- Saka Starts -->
-                        <div
-                            class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-landing  ">
-                            <a href="https://sakainternationalreal.com/" target="_blank">
+                        <!-- Natours -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-landing">
+                            <a class="portfolio-card" href="https://natourscssweb.netlify.app/" target="_blank"
+                                rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/saka.png" class="img-fluid" alt="Portfolio 3" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Saka International</h4>
-                                            <p>Website for a Textile Manufacturing & Export Company </p>
-
-                                        </div>
+                                    <img src="assets/images/projects/natour.webp" width="800" height="640"
+                                        loading="lazy" alt="Natours tour landing page" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Visit site <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Landing Page</span>
+                                    <h3>Natours</h3>
+                                    <p>Landing page for a tour company.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- Saka Ends -->
 
-
-
-                        <!-- QR CODE Generator Starts -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-tools">
-                            <a href="https://qr-code-generator-online1.netlify.app/" target="_blank">
+                        <!-- Horizontal Scrolling -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item">
+                            <a class="portfolio-card" href="https://horizontal-scrolling-web.netlify.app/"
+                                target="_blank" rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/qr-code-generator.png" class="img-fluid"
-                                        alt="Portfolio 3" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>QR CODE Generator</h4>
-                                            <p>Create QR codes for free </p>
-
-                                        </div>
+                                    <img src="assets/images/projects/stemtutoring.webp" width="800" height="640"
+                                        loading="lazy" alt="Horizontal scrolling website" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Visit site <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Website</span>
+                                    <h3>Horizontal Scroll Site</h3>
+                                    <p>Website with horizontal scrolling navigation.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- QR CODE Generator Ends -->
 
-                        <!-- KZ Starts  -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item">
-                            <a href="https://kz-academic-guidance.netlify.app/" target="_blank">
+                        <!-- Dashboard -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item">
+                            <a class="portfolio-card" href="https://dashboardusingjs.netlify.app/" target="_blank"
+                                rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/tammylabsolutions.png" class="img-fluid" alt="Portfolio 3"
-                                        style="height: 280px;object-fit: cover;" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>KZ Lab Solutions</h4>
-                                            <p>Website for Lab Inspections</p>
-
-                                        </div>
+                                    <img src="assets/images/projects/dashboard.webp" width="800" height="640"
+                                        loading="lazy" alt="Admin dashboard with light and dark themes" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Visit site <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">JavaScript</span>
+                                    <h3>Dashboard</h3>
+                                    <p>Light/dark theme dashboard built with JavaScript.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- KZ Ends -->
 
-                        <!-- Salary Tax Calculator Starts -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-tools">
-                            <a href="https://salary-tax-calculator-online.netlify.app/" target="_blank">
+                        <!-- Invoice Maker -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-tools">
+                            <a class="portfolio-card" href="https://invoice-maker-online12.netlify.app/" target="_blank"
+                                rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/tax-calculator.png" class="img-fluid" alt="Portfolio 3" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Salary Tax Calculator</h4>
-                                            <p>Calculate your salary tax for free</p>
-
-                                        </div>
+                                    <img src="assets/images/projects/invoice-maker.webp" width="800" height="640"
+                                        loading="lazy" alt="Invoice Maker tool" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Open tool <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Web Tool</span>
+                                    <h3>Invoice Maker</h3>
+                                    <p>Create professional-looking invoices for free.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- Salary Tax Calculator Ends -->
 
-
-                        <!-- Text tool Starts -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-tools">
-                            <a href="https://text-tools-online.netlify.app/" target="_blank">
+                        <!-- Resume Builder -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-tools">
+                            <a class="portfolio-card" href="https://resume-builder-online1.netlify.app/" target="_blank"
+                                rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/text-tool.png" class="img-fluid" alt="Portfolio 3" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Powerful text tools.
-                                            </h4>
-                                            <p>Count, convert, clean, sort, compare and transform text instantly in your
-                                                browser.</p>
-
-                                        </div>
+                                    <img src="assets/images/projects/resume-builder.webp" width="800" height="640"
+                                        loading="lazy" alt="Resume Builder tool" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Open tool <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Web Tool</span>
+                                    <h3>Resume Builder</h3>
+                                    <p>Build your resume for free.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- text tool Ends -->
 
-
-                        <!-- DeBraem Starts -->
-                        <div
-                            class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-landing filter-ecommerce">
-                            <a href="https://www.impressiondebraem.com/" target="_blank">
+                        <!-- Currency Converter -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-tools">
+                            <a class="portfolio-card" href="https://currency-converter-online1.netlify.app/"
+                                target="_blank" rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/debraem.jpg" class="img-fluid" alt="Portfolio 3" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Impression De Braem</h4>
-                                            <p>Ecommerce Perfume Store </p>
-
-                                        </div>
+                                    <img src="assets/images/projects/currency-converter.webp" width="800" height="640"
+                                        loading="lazy" alt="Currency Converter tool" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Open tool <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Web Tool</span>
+                                    <h3>Currency Converter</h3>
+                                    <p>Convert your currency for free.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- DeBraem Ends -->
 
-                        <!-- Unit Converter Starts -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-tools">
-                            <a href="https://unit-converter-online.netlify.app/" target="_blank">
+                        <!-- CSS Clip Path Generator -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-tools">
+                            <a class="portfolio-card" href="https://css-clippath-generator.netlify.app/" target="_blank"
+                                rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/unit-converter.png" class="img-fluid" alt="Portfolio 3" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Convert units instantly</h4>
-                                            <p>Pick a category, enter a value, and choose your units. The conversion
-                                                updates as you type.</p>
-
-                                        </div>
+                                    <img src="assets/images/projects/clip-path-generator.webp" width="800" height="640"
+                                        loading="lazy" alt="CSS Clip Path Generator tool" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Open tool <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Web Tool</span>
+                                    <h3>CSS Clip Path Generator</h3>
+                                    <p>Generate CSS shapes with clip-path for free.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- Unit Converter  Ends -->
 
-                        <!-- Time Converter Starts -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-tools">
-                            <a href="https://world-time-converter-online.netlify.app/" target="_blank">
+                        <!-- CSS Toolkits -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-tools">
+                            <a class="portfolio-card" href="https://css-toolkits.netlify.app/" target="_blank"
+                                rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/time-converter.png" class="img-fluid" alt="Portfolio 3" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Convert time
-                                                across the world.</h4>
-                                            <p>Enter a time in one city and instantly see the equivalent time in another
-                                                location.
-
-                                            </p>
-
-                                        </div>
+                                    <img src="assets/images/projects/css-toolkit.webp" width="800" height="640"
+                                        loading="lazy" alt="CSS Toolkits collection" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Open tool <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Web Tool</span>
+                                    <h3>CSS Toolkits</h3>
+                                    <p>Explore different CSS tools for free.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- Time Converter  Ends -->
 
-                        <!-- Sasta Tareen starts -->
-                        <div
-                            class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-ecommerce">
-                            <a target="_blank">
+                        <!-- Extract Text from Image -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-tools">
+                            <a class="portfolio-card" href="https://extract-text-image.netlify.app/" target="_blank"
+                                rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/sastatreen.png" class="img-fluid" alt="Portfolio 3" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>SastaTareen</h4>
-                                            <p>Grocery App </p>
-
-                                        </div>
+                                    <img src="assets/images/projects/extract-text-image.webp" width="800" height="640"
+                                        loading="lazy" alt="Extract Text from Image tool" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Open tool <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Web Tool</span>
+                                    <h3>Extract Text from Image</h3>
+                                    <p>Extract text from any image for free.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- Sasta Tareen ends -->
-                        <!-- Zakat calculator Starts -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-tools">
-                            <a href="https://zakat-calculator-online1.netlify.app/" target="_blank">
+
+                        <!-- Favicon Generator -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-tools">
+                            <a class="portfolio-card" href="https://favicon-generator-online.netlify.app/"
+                                target="_blank" rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/zakat-calulator.png" class="img-fluid" alt="Portfolio 3" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Zakat Calculator</h4>
-                                            <p>Know your Zakat obligation
-
-                                            </p>
-
-                                        </div>
+                                    <img src="assets/images/projects/favicon-generator.webp" width="800" height="640"
+                                        loading="lazy" alt="Favicon Generator tool" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Open tool <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Web Tool</span>
+                                    <h3>Favicon Generator</h3>
+                                    <p>Generate favicons for free.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- Zakat Calculator  Ends -->
 
-
-
-
-                        <!-- Goodycs starts -->
-                        <div
-                            class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-ecommerce">
-                            <a href="https://goodycs.com/en" target="_blank">
+                        <!-- Image Compressor -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-tools">
+                            <a class="portfolio-card" href="https://image-compressor-online1.netlify.app/"
+                                target="_blank" rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/goody1000x800.png" class="img-fluid" alt="Portfolio 3" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Goody Culinary Solutions</h4>
-                                            <p>Food Recipe and Product Website</p>
-
-                                        </div>
+                                    <img src="assets/images/projects/image-compressor.webp" width="800" height="640"
+                                        loading="lazy" alt="Image Compressor tool" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Open tool <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Web Tool</span>
+                                    <h3>Image Compressor</h3>
+                                    <p>Compress any image for free.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- Goodycs Ends -->
 
-
-                        <!-- Intranet Starts -->
-                        <!-- <div
-                            class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item">
-                            <a href="https://intranet-portal.netlify.app/" target="_blank">
+                        <!-- Image Resizer -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-tools">
+                            <a class="portfolio-card" href="https://image-resizer-online1.netlify.app/" target="_blank"
+                                rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/intranetportla.png" class="img-fluid" alt="Portfolio 3"
-                                        style="height: 280px;object-fit: cover;" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Intranet Portal</h4>
-                                            <p>Intranet Portal Using ReactJS</p>
-
-                                        </div>
+                                    <img src="assets/images/projects/image-resizer.webp" width="800" height="640"
+                                        loading="lazy" alt="Image Resizer tool" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Open tool <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
                                 </div>
-                            </a>
-                        </div> -->
-                        <!-- Intranet Ends -->
-
-
-
-                        <!-- JSON Formatter Starts -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-tools">
-                            <a href="https://json-formatter-online1.netlify.app/" target="_blank">
-                                <div class="portfolio-wrap">
-                                    <img src="assets/images/json-formatter.png" class="img-fluid" alt="Portfolio 3" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>JSON Formatter</h4>
-                                            <p>JSON Formatter Tool For Free </p>
-
-                                        </div>
-                                    </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Web Tool</span>
+                                    <h3>Image Resizer</h3>
+                                    <p>Resize any image for free.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- JSON Formatter Ends -->
 
-
-
-                        <!-- BIC Art Starts -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item ">
-                            <!-- <a href="https://bicartmaster.com/" target="_blank"> -->
-                            <a target="_blank">
+                        <!-- PDF Converter -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-tools">
+                            <a class="portfolio-card" href="https://pdf-image-word-converter.netlify.app/"
+                                target="_blank" rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/Bicart1000x800.png" class="img-fluid" alt="Portfolio 4" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Bicartmaster</h4>
-                                            <p>Competetion Website</p>
-
-                                        </div>
+                                    <img src="assets/images/projects/pdf-converter.webp" width="800" height="640"
+                                        loading="lazy" alt="PDF Converter tool" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Open tool <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Web Tool</span>
+                                    <h3>PDF Converter</h3>
+                                    <p>Convert PDFs and images in either direction.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- BIC Art Ends -->
 
-                        <!-- Bullpen Starts -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item ">
-                            <a href="https://thebullpen.pk/" target="_blank">
+                        <!-- QR Code Generator -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-tools">
+                            <a class="portfolio-card" href="https://qr-code-generator-online1.netlify.app/"
+                                target="_blank" rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/bullpen1000x800.png" class="img-fluid" alt="Portfolio 7" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>The Bullpen</h4>
-                                            <p>Coworking Space</p>
-
-                                        </div>
+                                    <img src="assets/images/projects/qr-code-generator.webp" width="800" height="640"
+                                        loading="lazy" alt="QR Code Generator tool" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Open tool <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Web Tool</span>
+                                    <h3>QR Code Generator</h3>
+                                    <p>Create QR codes for free.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- Bullpen Ends -->
 
-                        <!-- Horizontal Scrolling Starts -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item ">
-                            <a href="https://horizontal-scrolling-web.netlify.app/" target="_blank">
+                        <!-- Salary Tax Calculator -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-tools">
+                            <a class="portfolio-card" href="https://salary-tax-calculator-online.netlify.app/"
+                                target="_blank" rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/stemtutoring.png" class="img-fluid" alt="Portfolio 4"
-                                        style="height: 280px;object-fit: cover;" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>CS</h4>
-                                            <p>Horizontal Scrolling Website</p>
-
-                                        </div>
+                                    <img src="assets/images/projects/tax-calculator.webp" width="800" height="640"
+                                        loading="lazy" alt="Salary Tax Calculator tool" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Open tool <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Web Tool</span>
+                                    <h3>Salary Tax Calculator</h3>
+                                    <p>Calculate your salary tax for free.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- Horizontal Scrolling Ends -->
 
-
-                        <!-- Kasmy Starts -->
-                        <div
-                            class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-ecommerce">
-                            <a href="https://kasmy.com.pk/" target="_blank">
+                        <!-- Text Tools -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-tools">
+                            <a class="portfolio-card" href="https://text-tools-online.netlify.app/" target="_blank"
+                                rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/kasmypk.png" class="img-fluid" alt="Portfolio 4"
-                                        style="height: 280px;object-fit: cover;" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>KASMY PACK</h4>
-                                            <p>Website For Kasmy Store</p>
-
-                                        </div>
+                                    <img src="assets/images/projects/text-tool.webp" width="800" height="640"
+                                        loading="lazy" alt="Text Tools" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Open tool <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Web Tool</span>
+                                    <h3>Text Tools</h3>
+                                    <p>Count, convert, clean, sort, compare and transform text in your browser.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- Kasmy Ends -->
-                        <!-- CSS Toolkits Starts -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-tools">
-                            <a href="https://css-toolkits.netlify.app/" target="_blank">
-                                <div class="portfolio-wrap">
-                                    <img src="assets/images/CSS-toolkit.png" class="img-fluid" alt="Portfolio 3" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>CSS Toolkits</h4>
-                                            <p>Explore Different CSS Tools for Free </p>
 
-                                        </div>
+                        <!-- Unit Converter -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-tools">
+                            <a class="portfolio-card" href="https://unit-converter-online.netlify.app/" target="_blank"
+                                rel="noopener">
+                                <div class="portfolio-wrap">
+                                    <img src="assets/images/projects/unit-converter.webp" width="800" height="640"
+                                        loading="lazy" alt="Unit Converter tool" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Open tool <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Web Tool</span>
+                                    <h3>Unit Converter</h3>
+                                    <p>Convert units instantly as you type.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- CSS Toolkits Ends -->
 
-                        <!-- Natour Starts -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item  filter-landing">
-                            <a href="https://natourscssweb.netlify.app/" target="_blank">
+                        <!-- World Time Converter -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-tools">
+                            <a class="portfolio-card" href="https://world-time-converter-online.netlify.app/"
+                                target="_blank" rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/natour1000x800.png" class="img-fluid" alt="Portfolio 5" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>NaTour Landing Page</h4>
-                                            <p>Landing Page Tour </p>
-
-                                        </div>
+                                    <img src="assets/images/projects/time-converter.webp" width="800" height="640"
+                                        loading="lazy" alt="World Time Converter tool" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Open tool <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Web Tool</span>
+                                    <h3>World Time Converter</h3>
+                                    <p>See the equivalent time in any city instantly.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- Natour Ends -->
 
-
-                        <!-- Rainbow Starts -->
-                        <div
-                            class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-ecommerce">
-                            <a href="https://rainbowmilk.com/" target="_blank">
+                        <!-- Zakat Calculator -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-tools">
+                            <a class="portfolio-card" href="https://zakat-calculator-online1.netlify.app/"
+                                target="_blank" rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/Rainbow1000x800.png" class="img-fluid" alt="Portfolio 5" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Rainbow Milk</h4>
-                                            <p>Recipe Website</p>
-
-                                        </div>
+                                    <img src="assets/images/projects/zakat-calulator.webp" width="800" height="640"
+                                        loading="lazy" alt="Zakat Calculator tool" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Open tool <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Web Tool</span>
+                                    <h3>Zakat Calculator</h3>
+                                    <p>Know your Zakat obligation.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- Rainbow ends -->
 
-
-                        <!-- Hodophile Starts -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item ">
-                            <a href="https://hodophile.pk/" target="_blank">
+                        <!-- JSON Formatter -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item filter-tools">
+                            <a class="portfolio-card" href="https://json-formatter-online1.netlify.app/" target="_blank"
+                                rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/hodophile1000x800.png" class="img-fluid"
-                                        alt="Portfolio 1" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Hodophile Adventures</h4>
-                                            <p>Tour Website</p>
-
-                                        </div>
+                                    <img src="assets/images/projects/json-formatter.webp" width="800" height="640"
+                                        loading="lazy" alt="JSON Formatter tool" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Open tool <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
                                 </div>
-                            </a>
-
-                        </div>
-                        <!-- Hodophile Ends -->
-
-
-                        <!-- LiProspect Starts -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-landing ">
-                            <a href="https://liprospect.com/" target="_blank">
-                                <div class="portfolio-wrap">
-                                    <img src="assets/images/liprospect1000x800.png" class="img-fluid"
-                                        alt="Portfolio 6" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>LiProspect</h4>
-                                            <p>Landing Page</p>
-
-                                        </div>
-                                    </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">Web Tool</span>
+                                    <h3>JSON Formatter</h3>
+                                    <p>Format, validate and minify JSON for free.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- LiProspect Ends -->
 
-
-                        <!-- Chatgpt starts -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-landing ">
-                            <a href="https://chat-gpt3-prac.netlify.app/" target="_blank">
+                        <!-- Guess My Number -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item">
+                            <a class="portfolio-card" href="https://jsguessmynumberjs.netlify.app/" target="_blank"
+                                rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/chatgpt3.png" class="img-fluid" alt="Portfolio 6"
-                                        style="height: 280px;object-fit: cover;" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>ChatGPT3 Landing Page</h4>
-                                            <p>ChatGPT3 Landing Page on ReactJS</p>
-
-                                        </div>
+                                    <img src="assets/images/projects/guess.webp" width="800" height="640"
+                                        loading="lazy" alt="Guess My Number browser game" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Play <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">JavaScript Game</span>
+                                    <h3>Guess My Number</h3>
+                                    <p>Browser game built with JavaScript.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- Chatgpt Ends -->
 
-                        <!-- Marina Mall Starts-->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-landing">
-                            <a href="https://marinamallnauman.netlify.app/" target="_blank">
+                        <!-- Dice Game -->
+                        <div class="col-lg-4 col-md-6 col-12 row-item portfolio-item">
+                            <a class="portfolio-card" href="https://jspiggamejs.netlify.app/" target="_blank"
+                                rel="noopener">
                                 <div class="portfolio-wrap">
-                                    <img src="assets/images/marinamall.png" class="img-fluid" alt="Portfolio 6"
-                                        style="height: 280px;object-fit: cover;" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Marina Mall</h4>
-                                            <p>Landing Page</p>
-
-                                        </div>
+                                    <img src="assets/images/projects/piggame.webp" width="800" height="640"
+                                        loading="lazy" alt="Dice game in the browser" />
+                                    <div class="portfolio-info d-flex align-items-center justify-content-center">
+                                        <span class="portfolio-visit">Play <i class="fa fa-external-link"
+                                                aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <span class="portfolio-type">JavaScript Game</span>
+                                    <h3>Dice Game</h3>
+                                    <p>Two-player dice game built with JavaScript.</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- Marina Mall Ends-->
 
-                        <!-- Dashboard Starts -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item">
-                            <a href="https://dashboardusingjs.netlify.app/" target="_blank">
-                                <div class="portfolio-wrap">
-                                    <img src="assets/images/dashboard1000x800.png" class="img-fluid"
-                                        alt="Portfolio 1" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Dashboard</h4>
-                                            <p>Light/Dark Theme Dashboard Using JavaScript</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-
-                        </div>
-                        <!-- Dashboard Ends -->
-
-                        <!-- Guess My Number Starts -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item">
-                            <a href="https://jsguessmynumberjs.netlify.app/" target="_blank">
-                                <div class="portfolio-wrap">
-                                    <img src="assets/images/guess1000x800.png" class="img-fluid" alt="Portfolio 1" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Guess My Number</h4>
-                                            <p>Game using javascript</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-
-                        </div>
-                        <!-- Guess My Number Ends -->
-
-                        <!-- BabaBeard Starts -->
-                        <div
-                            class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-landing filter-ecommerce">
-                            <a target="_blank">
-                                <div class="portfolio-wrap">
-                                    <img src="assets/images/bababeard.png" class="img-fluid" alt="Portfolio 1" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Baba Beard Oil</h4>
-                                            <p>Website for beard oil company</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-
-                        </div>
-                        <!-- BabaBeard Ends -->
-
-                        <!-- Pig Game starts -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item">
-                            <a href="https://jspiggamejs.netlify.app/" target="_blank">
-                                <div class="portfolio-wrap">
-                                    <img src="assets/images/piggame1000x800.png" class="img-fluid" alt="Portfolio 1" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Dice Game</h4>
-                                            <p>Game using JavaScript</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-
-                        </div>
-                        <!-- Pig Game ends -->
-
-
-                        <!-- Sahr e Zayt starts -->
-                        <div
-                            class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-ecommerce">
-                            <a>
-                                <div class="portfolio-wrap">
-                                    <img src="assets/images/sahrezayt.png" class="img-fluid" alt="Portfolio 2" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Sahr e Zayt</h4>
-                                            <p>Ecommerce Project</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- Sahr e Zayt ends -->
-
-
-                        <!-- Business Landing Page Starts -->
-                        <!-- <div
-                            class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item  filter-landing">
-                            <a href="https://businesslandingpage122.netlify.app/" target="_blank">
-                                <div class="portfolio-wrap">
-                                    <img src="assets/images/businesslanding1000x800.png" class="img-fluid"
-                                        alt="Portfolio 7" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Swan Lake</h4>
-                                            <p>Business Landing Page</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-
-                        </div> -->
-                        <!-- Business Landing Page Ends -->
-
-                        <!-- Noon Landing Starts -->
-                        <!-- <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item">
-                            <a href="https://noonlandingprac.netlify.app/" target="_blank">
-                                <div class="portfolio-wrap">
-                                    <img src="assets/images/noon.png" class="img-fluid" alt="Portfolio 7"
-                                        style="height: 280px;object-fit: cover;" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>Noon Landing Page (In Progress)</h4>
-                                            <p>Noon Store Landing Page on ReactJS</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-
-                        </div> -->
-                        <!-- Noon Landing ends -->
-
-
-                        <!-- Tech in Pack Starts -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item ">
-                            <a href="https://techinpack.com/" target="_blank">
-                                <div class="portfolio-wrap">
-                                    <img src="assets/images/techinpack1000x800.png" class="img-fluid"
-                                        alt="Portfolio 8" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>TechinPack</h4>
-                                            <p>Blogs Website</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-
-                        </div>
-                        <!-- Tech in Pack Ends -->
-
-
-                        <!-- TCS Starts -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-landing">
-                            <a target="_blank">
-                                <div class="portfolio-wrap">
-                                    <img src="assets/images/tcs1000x800.png" class="img-fluid" alt="Portfolio 9" />
-                                    <div
-                                        class="portfolio-info d-flex flex-column align-items-center justify-content-center">
-                                        <div class="portfolio-inner-info">
-                                            <h4>TCS Website</h4>
-                                            <p>Landing Page</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- TCS Ends -->
                     </div>
                     <!-- End Row -->
                 </div>
@@ -1593,15 +1377,13 @@
             </section>
             <!-- End Portfolio Section -->
 
-
-
             <!-- Contact Section -->
             <section id="contact" class="contact section-spacing">
                 <!-- Container -->
                 <div class="container">
                     <!-- Section Title -->
                     <div class="section-title">
-                        <h1>Contact <span>Me</span></h1>
+                        <h2>Contact <span>Me</span></h2>
                         <span class="separator"></span>
                     </div>
                     <!-- End Section Title -->
@@ -1612,10 +1394,10 @@
                             <!-- Contact Address -->
                             <div class="col-md-6 row-item d-flex align-items-stretch">
                                 <div class="card-body d-flex flex-row">
-                                    <div class="card-icon"><i class="fa fa-map-marker"></i></div>
+                                    <div class="card-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
                                     <div class="card-content ml-3">
                                         <h3>My Address</h3>
-                                        <p> Pakistan</p>
+                                        <p>Karachi, Pakistan</p>
                                     </div>
                                 </div>
                             </div>
@@ -1623,24 +1405,27 @@
                             <!-- Contact Social Profiles -->
                             <div class="col-md-6 row-item d-flex align-items-stretch">
                                 <div class="card-body d-flex flex-row">
-                                    <div class="card-icon"><i class="fa fa-share-alt"></i></div>
+                                    <div class="card-icon"><i class="fa fa-share-alt" aria-hidden="true"></i></div>
                                     <div class="card-content ml-3">
                                         <h3>Social Profiles</h3>
                                         <div class="social-links d-flex flex-wrap">
                                             <a href="https://www.linkedin.com/in/nouman-saleem-0b34941a1/"
-                                                target="_blank" data-toggle="tooltip" data-placement="top"
-                                                data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a>
-                                            <a href="https://github.com/NaumanSaleem22" target="_blank"
+                                                target="_blank" rel="noopener" aria-label="LinkedIn"
                                                 data-toggle="tooltip" data-placement="top"
-                                                data-original-title="Github"><i class="fa fa-github"></i></a>
-
+                                                data-original-title="LinkedIn"><i class="fa fa-linkedin"
+                                                    aria-hidden="true"></i></a>
+                                            <a href="https://github.com/NaumanSaleem22" target="_blank" rel="noopener"
+                                                aria-label="GitHub" data-toggle="tooltip" data-placement="top"
+                                                data-original-title="GitHub"><i class="fa fa-github"
+                                                    aria-hidden="true"></i></a>
                                             <a href="https://m.facebook.com/nouman.saleem.798" target="_blank"
-                                                data-toggle="tooltip" data-placement="top"
-                                                data-original-title="Facebook"><i class="fa fa-facebook"></i></a>
-                                            <a href="https://twitter.com/highonatoms" target="_blank"
-                                                data-toggle="tooltip" data-placement="top"
-                                                data-original-title="Twitter"><i class="fa fa-twitter"></i></a>
-
+                                                rel="noopener" aria-label="Facebook" data-toggle="tooltip"
+                                                data-placement="top" data-original-title="Facebook"><i
+                                                    class="fa fa-facebook" aria-hidden="true"></i></a>
+                                            <a href="https://twitter.com/highonatoms" target="_blank" rel="noopener"
+                                                aria-label="Twitter" data-toggle="tooltip" data-placement="top"
+                                                data-original-title="Twitter"><i class="fa fa-twitter"
+                                                    aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -1649,7 +1434,7 @@
                             <!-- Contact Email -->
                             <div class="col-md-6 row-item d-flex align-items-stretch">
                                 <div class="card-body d-flex flex-row">
-                                    <div class="card-icon"><i class="fa fa-envelope"></i></div>
+                                    <div class="card-icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
                                     <div class="card-content ml-3">
                                         <h3>Email Me</h3>
                                         <p><a href="mailto:noumansaleem1999@gmail.com">noumansaleem1999@gmail.com</a>
@@ -1661,12 +1446,12 @@
                             <!-- Contact Call -->
                             <div class="col-md-6 row-item d-flex align-items-stretch">
                                 <div class="card-body d-flex flex-row">
-                                    <div class="card-icon"><i class="fa fa-phone"></i></div>
+                                    <div class="card-icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
                                     <div class="card-content ml-3">
                                         <h3>Call Me</h3>
-                                        <div class="d-flex">
-                                            <p><a href="tel:+923456110337">(+92) 345 611 0337</a></p>
-                                            <p class="ml-4"><a href="tel:+923492182326">(+92) 349 218 2326</a></p>
+                                        <div class="d-flex flex-wrap">
+                                            <p class="mr-4"><a href="tel:+923456110337">(+92) 345 611 0337</a></p>
+                                            <p><a href="tel:+923492182326">(+92) 349 218 2326</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1676,52 +1461,58 @@
                         <!-- End Row -->
                     </div>
                     <!-- End Contact Info -->
-                    <!-- Contact Form -->
+                    <!-- Contact Form (Netlify Forms) -->
                     <div class="content-block contact-form-block">
-                        <p class="mt-4 mb-3">Feel free to get in touch with me. I am always open to discussing new
-                            projects, creative ideas or opportunities to be part of your visions.</p>
-                        <form action="assets/php/mail.php" method="post" id="contact-form"
-                            class="contact-form needs-validation" novalidate>
+                        <p class="mt-4 mb-3">Have a project or role in mind? Send me a message and I'll get back to
+                            you.</p>
+                        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field"
+                            id="contact-form" class="contact-form needs-validation" novalidate>
+                            <input type="hidden" name="form-name" value="contact" />
+                            <p class="d-none"><label>Leave this empty: <input name="bot-field" /></label></p>
                             <div class="form-row">
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="col-sm-6 col-12">
                                     <div class="form-group">
+                                        <label for="ContactFormName" class="sr-only">Name</label>
                                         <input type="text" id="ContactFormName" name="name" class="form-control"
-                                            placeholder="Name" required="" />
+                                            placeholder="Name" autocomplete="name" required />
                                     </div>
                                 </div>
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="col-sm-6 col-12">
                                     <div class="form-group">
+                                        <label for="ContactFormEmail" class="sr-only">Email</label>
                                         <input type="email" id="ContactFormEmail" name="email" class="form-control"
-                                            placeholder="Email" required="" />
+                                            placeholder="Email" autocomplete="email" required />
                                     </div>
                                 </div>
                             </div>
                             <div class="form-row">
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="col-sm-6 col-12">
                                     <div class="form-group">
-                                        <input type="tel" id="ContactFormPhone" name="phone" pattern="[0-9\-]*"
-                                            class="form-control" placeholder="Phone Number" value="" required="" />
+                                        <label for="ContactFormPhone" class="sr-only">Phone number (optional)</label>
+                                        <input type="tel" id="ContactFormPhone" name="phone" pattern="[0-9+\-\s()]*"
+                                            class="form-control" placeholder="Phone Number (optional)"
+                                            autocomplete="tel" />
                                     </div>
                                 </div>
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="col-sm-6 col-12">
                                     <div class="form-group">
+                                        <label for="ContactSubject" class="sr-only">Subject</label>
                                         <input type="text" id="ContactSubject" name="subject" class="form-control"
-                                            placeholder="Subject" value="" required="" />
+                                            placeholder="Subject" required />
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
+                                <label for="ContactFormMessage" class="sr-only">Message</label>
                                 <textarea id="ContactFormMessage" name="message" class="form-control" rows="4"
-                                    placeholder="Type Your Message Here..." required=""></textarea>
+                                    placeholder="Type Your Message Here..." required></textarea>
                             </div>
                             <div class="form-group submit mb-0">
-                                <input type="submit" class="btn btn-primary" value="Send Message" />
+                                <button type="submit" class="btn btn-primary">Send Message</button>
                             </div>
                         </form>
                     </div>
                     <!-- End Contact Form -->
-
-
                 </div>
                 <!-- End Container -->
             </section>
@@ -1733,33 +1524,34 @@
         <footer id="footer" class="footer section-spacing d-flex flex-row align-items-center bg-light py-4">
             <!-- Container -->
             <div class="container">
-                <!-- Copyright -->
-                <p class="copyright text-center">&copy; 2024 <a href="https://github.com/NaumanSaleem22"
-                        target="_blank">Nauman</a> &nbsp; - &nbsp; All rights reserved.</p>
-                <!-- End Copyright -->
+                <p class="copyright text-center">&copy; <span id="year">2026</span> <a
+                        href="https://github.com/NaumanSaleem22" target="_blank" rel="noopener">Nauman Saleem</a>
+                    &nbsp; - &nbsp; All rights reserved.</p>
             </div>
             <!-- End Container -->
         </footer>
         <!-- End Footer Section -->
 
         <!-- Back To Top Scroll Arrow -->
-        <div class="back-to-top"><i class="fa fa-angle-double-up" aria-hidden="true"></i></div>
+        <button type="button" class="back-to-top" aria-label="Back to top"><i class="fa fa-angle-double-up"
+                aria-hidden="true"></i></button>
         <!-- End Back To Top Scroll Arrow -->
 
         <!-- Style Switcher -->
         <div class="switcher-wrapper">
-            <button class="switcher-trigger"><i class="fa fa-cog fa-spin"></i></button>
+            <button class="switcher-trigger" type="button" aria-label="Change theme color"><i class="fa fa-cog"
+                    aria-hidden="true"></i></button>
             <div class="switcher-inner">
-                <h6>Choose Color</h6>
+                <h2 class="h6">Choose Color</h2>
                 <ul class="color-list clearfix py-4 px-3 d-flex flex-wrap">
-                    <li class="green"><button class="fa fa-check"></button></li>
-                    <li class="blue"><button class="fa fa-check"></button></li>
-                    <li class="pink"><button class="fa fa-check"></button></li>
-                    <li class="orange"><button class="fa fa-check"></button></li>
-                    <li class="purple"><button class="fa fa-check"></button></li>
-                    <li class="yellow"><button class="fa fa-check"></button></li>
-                    <li class="magenta"><button class="fa fa-check"></button></li>
-                    <li class="red"><button class="fa fa-check"></button></li>
+                    <li class="green"><button class="fa fa-check" aria-label="Green"></button></li>
+                    <li class="blue"><button class="fa fa-check" aria-label="Blue"></button></li>
+                    <li class="pink"><button class="fa fa-check" aria-label="Pink"></button></li>
+                    <li class="orange"><button class="fa fa-check" aria-label="Orange"></button></li>
+                    <li class="purple"><button class="fa fa-check" aria-label="Purple"></button></li>
+                    <li class="yellow"><button class="fa fa-check" aria-label="Yellow"></button></li>
+                    <li class="magenta"><button class="fa fa-check" aria-label="Magenta"></button></li>
+                    <li class="red"><button class="fa fa-check" aria-label="Red"></button></li>
                 </ul>
             </div>
         </div>
@@ -1767,29 +1559,6 @@
     </div>
     <!-- End Page Wrapper -->
 
-
-    <!-- *********** Plugins JS Files *********** -->
-    <!-- Jquery -->
-    <script src="assets/js/jquery-3.5.1.js"></script>
-    <!-- Bootstrap -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <!-- Line Progressbar -->
-    <script src="assets/js/jquery.lineProgressbar.js"></script>
-    <!-- Isotope Gallery -->
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    <!-- Animate Headline -->
-    <script src="assets/js/jquery.animatedheadline.js"></script>
-    <!-- Counter Up -->
-    <script src="assets/js/jquery.waypoints.min.js"></script>
-    <script src="assets/js/jquery.countup.min.js"></script>
-    <!-- Magnific Popup -->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-
-    <!-- *********** Template JS Files *********** -->
-    <!-- Main JS -->
-    <script src="assets/js/main.js"></script>
-    <!-- Switcher JS -->
-    <script src="assets/js/switcher.js"></script>
 
 </body>
 
